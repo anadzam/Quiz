@@ -13,38 +13,46 @@ enum Constants {
         case backgroundImage
         case illustration
         case loginButton
-        
+        case logoutButton
+        case detailButton
+        case arrowSign
     }
-    enum labelNames {
-        static let loginLabel: String = "ჩემი პირველი ქვიზი"
-        static let placeholder: String = "შეიყვანე სახელი"
-    }
+   
     
     enum fonts {
         static let loginLabelFont: String = "AKAD10"
-        static let loginTextView: UIFont = .systemFont(ofSize: 12)
+//        static let loginTextView: UIFont = .systemFont(ofSize: 12)
         
     }
     
     enum Colors {
         static let placeholder = UIColor(hex: 0xB3B3B3)
         static let textViewBorderColor = UIColor(hex: 0xFFC44A).cgColor
-        static let yellowColor = UIColor(hex: 0xFFC44A)
+        static let yellowPrimary = UIColor(hex: 0xFFC44A)
+        static let bluePrimary = UIColor(hex: 0x537FE7)
+        static let blueSecondaryLighter = UIColor(hex: 0x6B91EA)
+        static let neutralLighterGrey = UIColor(hex: 0xF6F6F6)
+        static let neutralDarkGrey = UIColor(hex: 0x1D1D1D)
+        static let neutralGrey = UIColor(hex: 0xB3B3B3)
+        
+        
+        
+        
     }
-    //    enum TextView {
-    //        static let trailing: CGFloat = 2
-    //        static let height: CGFloat = 50
-    //        static let borderWidth: CGFloat = 1.0
-    //        static let cornerRadius: CGFloat = 23
-    //        static let font: UIFont = .systemFont(ofSize: 16)
-    //        static let placeholder: String = "დაწერეთ შეტყობინება"
-    //        static let topEdge: CGFloat = 15
-    //        static let leftEdge: CGFloat = 10
-    //        static let top: CGFloat = 2
-    //        static let bottom: CGFloat = 2
-    //        static let maxNumberOfLines: CGFloat = 6
-    //    }
-    //
+        enum TextView {
+            static let trailing: CGFloat = 2
+            static let height: CGFloat = 50
+            static let borderWidth: CGFloat = 1.0
+            static let cornerRadius: CGFloat = 23
+            static let font: UIFont = .systemFont(ofSize: 16)
+            static let placeholder: String = "დაწერეთ შეტყობინება"
+            static let topEdge: CGFloat = 15
+            static let leftEdge: CGFloat = 10
+            static let top: CGFloat = 2
+            static let bottom: CGFloat = 2
+            static let maxNumberOfLines: CGFloat = 6
+        }
+    
     //    enum Label {
     //        static let errorLabel: String = "არ გაიგზავნა"
     //    }

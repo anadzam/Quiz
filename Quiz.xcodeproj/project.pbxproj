@@ -7,7 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91CE9E042A5D555200DA1AF1 /* ScoreSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CE9E032A5D555200DA1AF1 /* ScoreSection.swift */; };
+		91CE9E082A5D993E00DA1AF1 /* SubjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CE9E072A5D993E00DA1AF1 /* SubjectCell.swift */; };
+		91D24EC62A5ECC9500350013 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D24EC52A5ECC9500350013 /* HomeViewModel.swift */; };
+		91D24EC92A5ECCFC00350013 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D24EC82A5ECCFC00350013 /* Subject.swift */; };
+		91D24ECB2A5ECD1D00350013 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D24ECA2A5ECD1D00350013 /* Question.swift */; };
+		91D24ECD2A5ECDE300350013 /* Answers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D24ECC2A5ECDE300350013 /* Answers.swift */; };
 		B1449BCC2A5302FF002670E3 /* AKAD10.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B1449BCB2A5302FF002670E3 /* AKAD10.TTF */; };
+		B171605E2A558E940095EC2A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B171605D2A558E940095EC2A /* HomeViewController.swift */; };
+		B17160602A55A7130095EC2A /* LoginViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B171605F2A55A7130095EC2A /* LoginViewController+Extensions.swift */; };
 		B1AA53462A41D0E300D0FB11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AA53452A41D0E300D0FB11 /* AppDelegate.swift */; };
 		B1AA53482A41D0E300D0FB11 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AA53472A41D0E300D0FB11 /* SceneDelegate.swift */; };
 		B1AA534A2A41D0E300D0FB11 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AA53492A41D0E300D0FB11 /* LoginViewController.swift */; };
@@ -21,7 +29,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		91CE9E032A5D555200DA1AF1 /* ScoreSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreSection.swift; sourceTree = "<group>"; };
+		91CE9E072A5D993E00DA1AF1 /* SubjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectCell.swift; sourceTree = "<group>"; };
+		91D24EC52A5ECC9500350013 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		91D24EC82A5ECCFC00350013 /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		91D24ECA2A5ECD1D00350013 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		91D24ECC2A5ECDE300350013 /* Answers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answers.swift; sourceTree = "<group>"; };
 		B1449BCB2A5302FF002670E3 /* AKAD10.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = AKAD10.TTF; sourceTree = "<group>"; };
+		B171605D2A558E940095EC2A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B171605F2A55A7130095EC2A /* LoginViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController+Extensions.swift"; sourceTree = "<group>"; };
 		B1AA53422A41D0E300D0FB11 /* Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1AA53452A41D0E300D0FB11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1AA53472A41D0E300D0FB11 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +63,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		91CE9E052A5D991C00DA1AF1 /* ScoreSection */ = {
+			isa = PBXGroup;
+			children = (
+				91CE9E032A5D555200DA1AF1 /* ScoreSection.swift */,
+			);
+			path = ScoreSection;
+			sourceTree = "<group>";
+		};
+		91CE9E062A5D992900DA1AF1 /* SubjectCell */ = {
+			isa = PBXGroup;
+			children = (
+				91CE9E072A5D993E00DA1AF1 /* SubjectCell.swift */,
+			);
+			path = SubjectCell;
+			sourceTree = "<group>";
+		};
+		91D24EC42A5ECC8200350013 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				91D24EC52A5ECC9500350013 /* HomeViewModel.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		91D24EC72A5ECCE800350013 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				91D24EC82A5ECCFC00350013 /* Subject.swift */,
+				91D24ECA2A5ECD1D00350013 /* Question.swift */,
+				91D24ECC2A5ECDE300350013 /* Answers.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		B13A7F152A52D8240095496A /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,7 +182,9 @@
 		B1AA53612A41D2BE00D0FB11 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				91D24EC42A5ECC8200350013 /* viewModel */,
 				B1AA53492A41D0E300D0FB11 /* LoginViewController.swift */,
+				B171605D2A558E940095EC2A /* HomeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -156,6 +208,9 @@
 		B1AA53642A41D6F100D0FB11 /* Custom UI */ = {
 			isa = PBXGroup;
 			children = (
+				91D24EC72A5ECCE800350013 /* Models */,
+				91CE9E062A5D992900DA1AF1 /* SubjectCell */,
+				91CE9E052A5D991C00DA1AF1 /* ScoreSection */,
 			);
 			path = "Custom UI";
 			sourceTree = "<group>";
@@ -174,6 +229,7 @@
 				B1AA536A2A41D77700D0FB11 /* UIColor+Extensions.swift */,
 				B1AA536C2A41D78400D0FB11 /* UIImage+Extensions.swift */,
 				B1AA536E2A41D79300D0FB11 /* UIView+Extensions.swift */,
+				B171605F2A55A7130095EC2A /* LoginViewController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -249,14 +305,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91CE9E082A5D993E00DA1AF1 /* SubjectCell.swift in Sources */,
 				B1AA53692A41D74700D0FB11 /* Constants.swift in Sources */,
+				91D24EC92A5ECCFC00350013 /* Subject.swift in Sources */,
+				91D24ECB2A5ECD1D00350013 /* Question.swift in Sources */,
 				B1AA536B2A41D77700D0FB11 /* UIColor+Extensions.swift in Sources */,
 				B1AA534A2A41D0E300D0FB11 /* LoginViewController.swift in Sources */,
+				B171605E2A558E940095EC2A /* HomeViewController.swift in Sources */,
 				B1AA536D2A41D78400D0FB11 /* UIImage+Extensions.swift in Sources */,
 				B1AA53462A41D0E300D0FB11 /* AppDelegate.swift in Sources */,
+				B17160602A55A7130095EC2A /* LoginViewController+Extensions.swift in Sources */,
+				91D24EC62A5ECC9500350013 /* HomeViewModel.swift in Sources */,
+				91D24ECD2A5ECDE300350013 /* Answers.swift in Sources */,
 				B1AA53502A41D0E300D0FB11 /* Quiz.xcdatamodeld in Sources */,
 				B1AA536F2A41D79300D0FB11 /* UIView+Extensions.swift in Sources */,
 				B1AA53482A41D0E300D0FB11 /* SceneDelegate.swift in Sources */,
+				91CE9E042A5D555200DA1AF1 /* ScoreSection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +466,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -429,6 +494,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
