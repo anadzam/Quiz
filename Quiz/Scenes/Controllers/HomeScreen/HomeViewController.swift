@@ -23,11 +23,12 @@ class HomeViewController: UIViewController {
         
     }()
     
-    private lazy var gpaView: ScoreSection = {
+    private lazy var scoreSectionView: ScoreSection = {
         let gpaView = ScoreSection()
         gpaView.translatesAutoresizingMaskIntoConstraints = false
         gpaView.isUserInteractionEnabled = true
-        
+        let gestureRecognizers = UITapGestureRecognizer(target: self, action: #selector(scoreSetionViewTapped))
+        gpaView.addGestureRecognizer(gestureRecognizers)
         return gpaView
     }()
     
@@ -58,6 +59,13 @@ class HomeViewController: UIViewController {
         
     }
     
+    
+    @objc func scoreSetionViewTapped() {
+        let destinationVC = GpaViewController()
+        self.navigationController?.pushViewController(destinationVC, animated: true)
+    }
+    
+    
     @objc func logOutButtonTapped() {
         dismiss(animated: true)
     }
@@ -77,7 +85,7 @@ class HomeViewController: UIViewController {
         view.addSubview(userLabel)
         view.addSubview(tableView)
         view.addSubview(logOutButton)
-        view.addSubview(gpaView)
+        view.addSubview(scoreSectionView)
         view.addSubview(subjectLabel)
         
     }
@@ -100,16 +108,16 @@ class HomeViewController: UIViewController {
     private func gpaViewConstraints() {
         NSLayoutConstraint.activate([
             
-            gpaView.topAnchor.constraint(equalTo: userLabel.bottomAnchor, constant: 20),
-            gpaView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16),
-            gpaView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -16),
-            gpaView.heightAnchor.constraint(equalToConstant: 76)
+            scoreSectionView.topAnchor.constraint(equalTo: userLabel.bottomAnchor, constant: 20),
+            scoreSectionView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16),
+            scoreSectionView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -16),
+            scoreSectionView.heightAnchor.constraint(equalToConstant: 76)
         ])
     }
     
     private func subjectLabelConstraints() {
         NSLayoutConstraint.activate([
-            subjectLabel.topAnchor.constraint(equalTo: gpaView.bottomAnchor, constant: 32),
+            subjectLabel.topAnchor.constraint(equalTo: scoreSectionView.bottomAnchor, constant: 32),
             subjectLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
         ])
     }
@@ -146,7 +154,7 @@ extension HomeViewController: UITableViewDataSource {
         let subjectCell = tableView.dequeueReusableCell(withIdentifier: "SubjectCell", for: indexPath) as! SubjectCell
         subjectCell.configure(with: viewModel.subjects[indexPath.row])
         
-       
+        
         return subjectCell
     }
     

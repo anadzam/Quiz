@@ -13,6 +13,7 @@
 		91D24EC92A5ECCFC00350013 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D24EC82A5ECCFC00350013 /* Subject.swift */; };
 		91D24ECB2A5ECD1D00350013 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D24ECA2A5ECD1D00350013 /* Question.swift */; };
 		91D24ECD2A5ECDE300350013 /* Answers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D24ECC2A5ECDE300350013 /* Answers.swift */; };
+		91D24ED22A5F633000350013 /* GpaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D24ED12A5F633000350013 /* GpaViewController.swift */; };
 		B1449BCC2A5302FF002670E3 /* AKAD10.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B1449BCB2A5302FF002670E3 /* AKAD10.TTF */; };
 		B171605E2A558E940095EC2A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B171605D2A558E940095EC2A /* HomeViewController.swift */; };
 		B17160602A55A7130095EC2A /* LoginViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B171605F2A55A7130095EC2A /* LoginViewController+Extensions.swift */; };
@@ -35,6 +36,7 @@
 		91D24EC82A5ECCFC00350013 /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
 		91D24ECA2A5ECD1D00350013 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		91D24ECC2A5ECDE300350013 /* Answers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answers.swift; sourceTree = "<group>"; };
+		91D24ED12A5F633000350013 /* GpaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GpaViewController.swift; sourceTree = "<group>"; };
 		B1449BCB2A5302FF002670E3 /* AKAD10.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = AKAD10.TTF; sourceTree = "<group>"; };
 		B171605D2A558E940095EC2A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B171605F2A55A7130095EC2A /* LoginViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController+Extensions.swift"; sourceTree = "<group>"; };
@@ -95,6 +97,31 @@
 				91D24ECC2A5ECDE300350013 /* Answers.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		91D24ECE2A5F62E200350013 /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				B1AA53492A41D0E300D0FB11 /* LoginViewController.swift */,
+			);
+			path = LoginScreen;
+			sourceTree = "<group>";
+		};
+		91D24ECF2A5F62EF00350013 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				B171605D2A558E940095EC2A /* HomeViewController.swift */,
+				91D24EC42A5ECC8200350013 /* viewModel */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		91D24ED02A5F630D00350013 /* GpaScreen */ = {
+			isa = PBXGroup;
+			children = (
+				91D24ED12A5F633000350013 /* GpaViewController.swift */,
+			);
+			path = GpaScreen;
 			sourceTree = "<group>";
 		};
 		B13A7F152A52D8240095496A /* Fonts */ = {
@@ -182,9 +209,9 @@
 		B1AA53612A41D2BE00D0FB11 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				91D24EC42A5ECC8200350013 /* viewModel */,
-				B1AA53492A41D0E300D0FB11 /* LoginViewController.swift */,
-				B171605D2A558E940095EC2A /* HomeViewController.swift */,
+				91D24ECE2A5F62E200350013 /* LoginScreen */,
+				91D24ECF2A5F62EF00350013 /* HomeScreen */,
+				91D24ED02A5F630D00350013 /* GpaScreen */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -309,6 +336,7 @@
 				B1AA53692A41D74700D0FB11 /* Constants.swift in Sources */,
 				91D24EC92A5ECCFC00350013 /* Subject.swift in Sources */,
 				91D24ECB2A5ECD1D00350013 /* Question.swift in Sources */,
+				91D24ED22A5F633000350013 /* GpaViewController.swift in Sources */,
 				B1AA536B2A41D77700D0FB11 /* UIColor+Extensions.swift in Sources */,
 				B1AA534A2A41D0E300D0FB11 /* LoginViewController.swift in Sources */,
 				B171605E2A558E940095EC2A /* HomeViewController.swift in Sources */,

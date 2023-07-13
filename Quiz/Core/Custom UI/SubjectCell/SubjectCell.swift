@@ -20,7 +20,7 @@ class SubjectCell: UITableViewCell {
     
     private let subjectIcon: UIImageView = {
         let subjectIcon = UIImageView()
-        subjectIcon.contentMode = .scaleToFill
+        subjectIcon.contentMode = .scaleAspectFit
         subjectIcon.translatesAutoresizingMaskIntoConstraints = false
         
         return subjectIcon
@@ -87,7 +87,7 @@ class SubjectCell: UITableViewCell {
     private func setUpGreyViewConstraints() {
         NSLayoutConstraint.activate([
             greyView.topAnchor.constraint(equalTo: contentView.topAnchor),
-            greyView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
+            greyView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -18),
             greyView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             greyView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor)
             
@@ -137,7 +137,7 @@ class SubjectCell: UITableViewCell {
     
     
     func configure(with subject: Subject) {
-//        subjectIcon.image = subject.icon
+        subjectIcon.image = UIImage(named: "\(subject.icon)")
         subjectLabel.text = subject.subjectTitle
         subjectDetailLabel.text = "აღწერა"
     }
